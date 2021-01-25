@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+
+    <!-- fonts are here -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap" rel="stylesheet"> 
+
+    <!--new stylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+
+
+    <title>KateLA 어학원</title>
+
+
+  </head>
+  <body>
+
+    <!--navbar section of the webpage-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="" width="25" height="25" class="d-inline-block">
+            KateLA
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">소개</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#testimonials">후기</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#curriculum">커리큘럼</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#action">상담 안내</a>
+                </li>
+
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!--title section of the webpage-->
+    <section id="title">
+        <div class="p-5 text-center bg-image" style="background-image: url(images/kate_front.jpeg);
+         background-size:cover; background-repeat: no-repeat; height: 80vh; width:100vw;">
+
+         <div class="container-fluid" id="opening">
+            <h1 class="text-light">아이의 세상을 넓혀주는 영어학습</h1>
+            <p class="text-light d-none d-lg-block d-md-block" id="p-main">15년간의 영어교육, 내신뿐만아닌 진정한 영어실력 배양</p>
+            <h3 class="text-light">케이트 엘에이와 함께 지금 시작하세요</p>
+            <button type="button" style="margin-top: 3%;" class="btn btn-outline-light" id="button-call" onclick="location.href='#action'">상담하기</button>
+         </div>
+
+        </div>
+    </section>
+
+    <section id="features">
+
+        <div class="row">
+            <div class="feature-box col-lg-4">
+                <img src="images/note_icon.png" class="feature-img"/>
+                <h3>영어의 기본기를 다져주는 수업</h3>
+                <p class="color-grey">내신뿐만 아닌 장기적인 영어실력과 기본기 향상에 초점을 맞춘 수업 커리큘럼</p>
+            </div>
+            <div class="feature-box col-lg-4">
+                <img src="images/users_icon.png" class="feature-img"/>
+                <h3>원어민 선생님이 가르치는 영어</h3>
+                <p class="color-grey">해외대학 출신 원어민 선생님이 가르치는 수업을 통한 실제 영어 회화 및 글쓰기 실력 향상</p>
+            </div>
+            <div class="feature-box col-lg-4">
+                <img src="images/web_icon.png" class="feature-img"/>
+                <h3>해외교재를 적극 활용하는 수업</h3>
+                <p class="color-grey">실제 사용되는 미국 초등학교 교과서를 통해 미국식 지문의 구조 이해력 향상</p>
+            </div>    
+        </div>
+
+    </section>
+
+    <section id="testimonials">
+
+        <div id="carousel-testimonial" class="carousel slide" data-bs-ride="carousel" data-interval="1300" data-pause="hover">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                    <h3 id="testimonial-text">"단어와 모의고사를 자주 풀어서 실력향상에 도움이 되었어요. 내신대비를 잘해주고 문법을 잘 가르쳐줘요."</h3>
+                    <p class="color-grey">학성고등학교 2학년 나준*</p>            
+              </div>
+              <div class="carousel-item">
+                    <h3 id="testimonial-text">"내신 대비를 잘해주고 서술형 적중률이 매우 높아요. 모의고사 점수를 문자로 보내주고 단어 외우는 시스템이 도움이 많이 되었어요."</h3>
+                    <p class="color-grey">학성고등학교 2학년 엄재*</p>    
+              </div>
+              <div class="carousel-item">
+                <h3 id="testimonial-text">"좋은 커리큘럼으로 초등 저학년부터 현재까지 꾸준히 교육을 받으니 외국인과의 소통이 가능합니다. 더불어 고3 모의고사도 1등급입니다."</h3>
+                <p class="color-grey">신정중학교 3학년 김*민 아버지</p>    
+              </div>
+            </div>
+            <a class="carousel-control-prev color-white" href="#carousel-testimonial" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next color-white" href="#carousel-testimonial" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+
+
+    </section>
+
+    <section id="curriculum">
+
+        <h2 class="title-curriculum">수업 커리큘럼</h2>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <strong>초등부</strong>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li class="list-curriculum">
+                            <strong>원어민 수업과정:</strong> 미국 초등학교 교과서 <em>Avenues</em>를 활용하여 문학, 사회, 과학 등의 다양한 과목을 영어로 수업합니다. 말하기와 쓰기에 집중하여 생활영어뿐만 아닌 논리/논술에 초점을 맞추어 수업을 진행합니다.
+                        </li>
+                        <br>
+                        <li class="list-curriculum">
+                            <strong>한국인 수업과정:</strong> 영어 글짓기/말하기 실력 향상을 위해 영어의 중요 문법을 수업하고 필수 영단어를 학습합니다. 딕테이션(듣고 쓰기)를 통해 리스닝 실력을 배양합니다. 학교 내신 및 영어 듣기시험을 포함한 다양한 시험을 대비하고 관리합니다. 고등학교 대비를 위한 수업을 진행합니다.
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <strong>중등부</strong>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li class="list-curriculum">
+                            <strong>원어민 수업과정:</strong> 원어민과 함께 다양한 분야의 지문을 읽고 여러 주제를 토론하여 말하기/글쓰기 실력과 논리력을 배양합니다. 영어권에서 실제 사용되는 문장구조/어휘 및 논술을 학습합니다.
+                        </li>
+                        <br>
+                        <li class="list-curriculum">
+                            <strong>한국인 수업과정:</strong> 독해와 문법을 위주로 내신 및 공인영어시험을 대비합니다. 필수단어 학습을 통해 영어 어휘능력을 향상시킵니다.
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <strong>고등부</strong>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li class="list-curriculum">
+                            <strong>한국인 수업과정:</strong> 수능 1등급과 학교 내신을 위한 소수정예의 철저한 밀착 관리를 합니다. 고등문법과 단어 관리 및 모의고사 위주의 수업으로 진행합니다.
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    </section>
+
+    <section id="action">
+        <h2 class="title-action">상담 안내</h2>
+
+        <div class="row">
+
+
+            <div class="col-lg-6">
+
+                <iframe class="round-square" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d811.6858862862442!2d129.29660408813984!3d35.535334690092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35662d64bd091771%3A0x535a5d0fe46d85c3!2z7LyA7J207Yq47JeY7JeQ7J207Ja07ZWZ7JuQ!5e0!3m2!1sko!2skr!4v1611320338427!5m2!1sko!2skr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+            </div>
+
+            <div class="col-lg-6 text-contact">
+
+                <p class="color-white"><img class="inverse-action" src="images/baseline_location_on_black_18dp.png"/><strong>위치: </strong>울산광역시 남구 거마로 14번길 11, 케이트엘에이 빌딩 2층 (옥동초 후문 맞은편)</p>
+                <p class="color-white"><img class="inverse-action" src="images/baseline_local_phone_black_18dp.png"><strong>전화 상담: </strong>052-275-0520</p>
+                <p class="color-white"><img class="inverse-action" src="images/baseline_access_time_black_18dp.png" /><strong>시간 안내: </strong>평일 오후 2시 - 오후 8시</p>
+                <button class="btn btn-outline-light" id="button-call" onclick="location.href='tel:+82-52-269-1242'">전화 상담</button>
+
+
+            </div>
+            
+
+            
+        </div>
+       
+    </section>
+
+    <footer id="footer">
+        <div class="container-fluid">
+            <p class="color-white">© Copyright 2020 KateLA</p>
+        </div>
+    </footer>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+  </body>
+</html>
